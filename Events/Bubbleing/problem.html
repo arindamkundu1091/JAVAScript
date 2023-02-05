@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            div {
+                margin: 10px;
+                border: 1px solid blue;
+            }
+            
+            p {
+                margin: 10px;
+                border: 1px solid red;
+            }
+            form {
+                margin: 10px;
+                border: 1px solid green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div onclick="alert('The Handeler!')">
+            <p>
+                If you click on <code>EM</code>, te Handeler on <code>DIV</code> runs
+            </p>
+        </div>
+        <form onclick ="alert('You Clicked Form!')">FORM
+            <div onclick ="alert('You Clicked Div!')">DIV
+                <p onclick ="alert('You Clicked P!')">P</p>
+            </div>
+        </form>
+        <form id ='form'>FORM
+            <div>DIV
+                <p>P</p>
+            </div>
+        </form>
+    </body>
+    </html>
